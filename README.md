@@ -2,7 +2,7 @@
 
 A sleek, high-performance **QR Code Utility** application built with **Flutter**. This app allows users to generate custom QR codes, scan them in real-time using the camera, and keep track of their scan history—all wrapped in a beautiful, adaptive UI.
 
-🔗) **Live Demo:** [![Open QR-Code App](https://img.shields.io/badge/Open-QR%20Code%20App-blue?style=for-the-badge&logo=appveyor)](https://qr-code-app-umol.vercel.app/
+🔗 **Live Demo:** [![Open QR-Code App](https://img.shields.io/badge/Open-QR%20Code%20App-blue?style=for-the-badge&logo=appveyor)](https://qr-code-app-umol.vercel.app/)
 
 ---
 
