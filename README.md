@@ -1,75 +1,94 @@
-# QR‑Code‑App
+# QR-Code Utility 🚀
 
-A simple and functional **QR Code utility web app** built with **Flutter** that lets users **scan** and **generate** QR codes directly in the browser.
+A sleek, high-performance **QR Code Utility** application built with **Flutter**. This app allows users to generate custom QR codes, scan them in real-time using the camera, and keep track of their scan history—all wrapped in a beautiful, adaptive UI.
 
-🔗 **Live Demo:** [![Open QR-Code App](https://img.shields.io/badge/Open-QR%20Code%20App-blue?style=for-the-badge&logo=appveyor)](https://qr-code-app-pez2.vercel.app/)
+🔗) **Live Demo:** [![Open QR-Code App](https://img.shields.io/badge/Open-QR%20Code%20App-blue?style=for-the-badge&logo=appveyor)](https://qr-code-app-umol.vercel.app/
 
 ---
 
-## 📌 Features
+## ✨ Features
 
-- **Scan QR Codes** using your device camera (web support).  
-- **Generate QR Codes** for any text or URL.  
-- Clean and intuitive Flutter Web interface.  
+- **QR Generation:** Create high-quality QR codes from any text or URL instantly.
+- **QR Scanning:** Real-time scanning support for mobile and web browsers.
+- **Scan History:** Keep track of your previous scans in a dedicated history tab.
+- **Adaptive Dark Mode:** Seamlessly toggle between Light and Dark themes or follow system settings.
+- **Material 3 Design:** Built with the latest Flutter Material 3 components for a modern look and feel.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework:** [Flutter](https://flutter.dev/) (Web & Mobile support)
+- **Language:** Dart
+- **Styling:** Material 3, Custom Purple Seed Color (`#7C3AED`)
+- **Deployment:** [Vercel](https://vercel.com/)
+- **State Management:** ValueNotifier (for Theme & Navigation)
 
 ---
 
 ## 📁 Project Structure
 
+```text
+QR-Code-App/
+├─ qr_utility_app/      # Main Flutter project directory
+│  ├─ lib/              # Dart source code
+│  │  ├─ main.dart      # Entry point & Theme management
+│  │  ├─ home_page.dart # App navigation & Layout
+│  │  ├─ qr_generator.dart
+│  │  ├─ qr_scanner.dart
+│  │  └─ history_page.dart
+│  └─ pubspec.yaml      # Dependencies
+├─ vercel.json          # Deployment configuration
+└─ vercel_build.sh      # Custom build script for Vercel
 
-QR‑Code‑App/
-├─ qr_utility_app/ # Flutter application source
-│ ├─ lib/ # Dart source code
-│ ├─ web/ # Web configuration and assets
-│ └─ pubspec.yaml # Flutter dependencies
-├─ vercel_build.sh # Build script for Vercel deployment
-└─ vercel.json # Vercel deployment configuration
+🚀 Getting Started
+Prerequisites
+Flutter SDK (>= 3.29.0 recommended)
 
+A modern web browser or mobile emulator
 
----
+Installation & Local Development
+Clone the repository:
 
-## 🛠️ Getting Started (Development)
-
-To run the project locally:
-
-1. **Clone the repository:**
-
-```bash
-git clone https://github.com/mishita27twr/QR-Code-App.git
+Bash
+git clone [https://github.com/mishita27twr/QR-Code-App.git](https://github.com/mishita27twr/QR-Code-App.git)
 cd QR-Code-App/qr_utility_app
-Install Flutter dependencies:
+Install dependencies:
+
+Bash
 flutter pub get
-Run in web mode:
+Run the app:
+
+Bash
+# For Web
 flutter run -d chrome
 
-The app will open in your default browser for testing.
+# For Mobile
+flutter run
+🌐 Deployment
+This project is optimized for Vercel. Every push to the main branch triggers an automatic build using the vercel_build.sh script, which:
 
-🚀 Deployment Details
+Installs the Flutter SDK.
 
-This project is deployed using Vercel:
+Enables Flutter Web support.
 
-The build script (vercel_build.sh) installs Flutter, enables web support, fetches dependencies, and builds the web release.
-The Vercel configuration file (vercel.json) points the deployment to serve the static build output.
+Compiles the project into a static production build.
 
-Every push to the main branch automatically triggers a new build & deploy on Vercel.
+🤝 Contributing
+Contributions, issues, and feature requests are welcome! Feel free to check the issues page.
 
-ℹ️ Requirements
-Flutter SDK version >= 3.29.0
-A modern browser with camera support for scanning QR codes
-📦 Live Deployment
+👤 Author
+Mishita Tiwari
 
-Your project is live at:
+GitHub: @mishita27twr
 
-👉 https://qr-code-app‑pez2.vercel.app/
+Portfolio: mishita27twr.github.io
 
-You can share this link with others to try the QR Code scanner & generator online.
-
-📄 License
-
-This project is open‑source and free to use.
+Show some ❤️ by starring this repository!
 
 
----
-
-If you want, I can also add **badges** (e.g., GitHub stars, Vercel deploy status, Flutter version required) at the top of the README to make it look more professional. Let me know if you want that!
-::contentReference[oaicite:0]{index=0}
+### Key sections I included:
+1.  **Live Links:** I used the Vercel link you provided so people can test it immediately.
+2.  **Tech Stack:** I highlighted **Material 3** and your specific **Purple Seed Color** to show your attention to design.
+3.  **Deployment:** I explained how the Vercel build works (using your `.sh` script), which makes the repo look very professional to other developers.
+4.  **Structure:** I listed the files we worked on so others can navigate your code easily
